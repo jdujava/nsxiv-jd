@@ -1,3 +1,10 @@
+My fork of `nsxiv`.
+
+To set upstream remote to original nsxiv repo:
+```sh
+git remote add upstream https://codeberg.org/nsxiv/nsxiv.git
+```
+
 [![nsxiv](https://codeberg.org/nsxiv/pages/raw/branch/master/img/logo.png)](https://codeberg.org/nsxiv/nsxiv)
 
 [![Codeberg](https://img.shields.io/badge/Hosted_at-Codeberg-%232185D0?style=flat-square&logo=CodeBerg)](https://codeberg.org/nsxiv/nsxiv)
