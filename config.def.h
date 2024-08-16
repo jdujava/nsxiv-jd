@@ -146,6 +146,7 @@ static const keymap_t keys[] = {
 	{ 0,            XK_Up,            t_move_sel,           DIR_UP },
 	{ 0,            XK_l,             t_move_sel,           DIR_RIGHT },
 	{ 0,            XK_Right,         t_move_sel,           DIR_RIGHT },
+	{ 0,            XK_space,         t_toggle_mark_and_move, None },
 	{ 0,            XK_R,             t_reload_all,         None },
 
 	{ 0,            XK_Left,          i_navigate,           -1 },

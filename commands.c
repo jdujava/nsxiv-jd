@@ -415,6 +415,13 @@ bool ct_move_sel(arg_t dir)
 	return tns_move_selection(&tns, dir, prefix);
 }
 
+bool ct_toggle_mark_and_move(arg_t _)
+{
+	mark_image(fileidx, !(files[fileidx].flags & FF_MARK));
+	ct_move_sel(DIR_RIGHT);
+	return true;
+}
+
 bool ct_reload_all(arg_t _)
 {
 	tns_free(&tns);
