@@ -194,19 +194,24 @@ static const keymap_t keys[] = {
 /* mouse button mappings for image mode: */
 static const button_t buttons_img[] = {
 	/* modifiers    button            function              argument */
-	{ 0,            1,                i_cursor_navigate,    None },
-	{ 0,            1,                i_fit_to_win,         SCALE_FIT },
-	{ ControlMask,  1,                i_drag,               DRAG_RELATIVE },
-	{ 0,            2,                i_drag,               DRAG_ABSOLUTE },
-	{ 0,            3,                g_switch_mode,        None },
-	{ 0,            4,                g_zoom,               +1 },
-	{ 0,            5,                g_zoom,               -1 },
+	{ 0,            3,                i_cursor_navigate,    None },
+	{ 0,            3,                i_fit_to_win,         SCALE_FIT },
+	{ 0,            1,                i_drag,               DRAG_RELATIVE },
+	{ ControlMask,  1,                i_drag,               DRAG_ABSOLUTE },
+	{ 0,            2,                g_switch_mode,        None },
+	{ 0,            4,                i_scroll,             DIR_UP },
+	{ 0,            5,                i_scroll,             DIR_DOWN },
+	{ 0,            6,                i_scroll,             DIR_LEFT },
+	{ 0,            7,                i_scroll,             DIR_RIGHT },
+	{ ControlMask,  4,                g_zoom,               +1 },
+	{ ControlMask,  5,                g_zoom,               -1 },
 };
 
 /* mouse button mappings for thumbnail mode: */
 static const button_t buttons_tns[] = {
 	/* modifiers    button            function              argument */
 	{ 0,            1,                t_select,             None },
+	{ 0,            2,                g_switch_mode,        None },
 	{ 0,            3,                t_drag_mark_image,    None },
 	{ 0,            4,                t_scroll,             DIR_UP },
 	{ 0,            5,                t_scroll,             DIR_DOWN },
